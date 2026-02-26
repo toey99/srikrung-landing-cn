@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>泰国车险中文顾问服务 | 在线购买泰国汽车保险 | 中文服务</title>
+    <meta name="description" content="专为在泰华人提供的泰国汽车保险中文顾问服务。通过ศรีกรุงโบรคเกอร์经纪人购买，享受特惠价格，24小时中文咨询。">
+    
+    <!-- Google Tag Manager (保留สำหรับ tracking) -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-KK657RS2');</script>
+    <!-- End Google Tag Manager -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --primary: #1e4a8c;
+            --primary-light: #2d5aa0;
+            --accent: #e85a3d;
+            --accent-green: #10b981;
+            --bg-light: #f8f9fa;
+            --bg-gray: #f0f2f5;
+            --text-dark: #1a1a2e;
+            --text-gray: #5a5a5a;
+            --border: #e0e0e0;
+        }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft YaHei', sans-serif;
+            line-height: 1.6; 
+            color: var(--text-dark);
+            background: var(--bg-light);
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+        
+        /* Hero Section */
+        .hero { 
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            border-radius: 12px; 
+            padding: 60px 40px; 
+            text-align: center;
+            color: white;
+            margin-top: 10px;
+            margin-bottom: 40px;
+        }
+        .hero h1 { font-size: 2.5rem; margin-bottom: 20px; font-weight: 700; }
+        .hero p { font-size: 1.2rem; margin-bottom: 30px; opacity: 0.9; }
+        .hero-buttons { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
+        .btn { 
+            padding: 15px 30px; 
+            border-radius: 8px; 
+            text-decoration: none; 
+            font-weight: 600; 
+            font-size: 1.1rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+        }
+        .btn-primary { 
+            background: var(--accent-green); 
+            color: white; 
+            border: none;
+        }
+        .btn-primary:hover { 
+            background: #0da271; 
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(16, 185, 129, 0.3);
+        }
+        .btn-secondary { 
+            background: transparent; 
+            color: white; 
+            border: 2px solid white;
+        }
+        .btn-secondary:hover { 
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+        }
+        
+        /* Section Styling */
+        .section { 
+            background: white; 
+            border-radius: 12px; 
+            padding: 40px; 
+            margin-bottom: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border);
+        }
+        .section-title { 
+            font-size: 1.8rem; 
+            color: var(--primary); 
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid var(--accent-green);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-title i { color: var(--accent-green); }
+        
+        /* Benefits Grid */
+        .benefits-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+            gap: 25px; 
+            margin-top: 20px;
+        }
+        .benefit-card { 
+            background: var(--bg-gray); 
+            padding: 25px; 
+            border-radius: 10px;
+            border-left: 4px solid var(--accent-green);
+        }
+        .benefit-card h3 { 
+            color: var(--primary); 
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+        .benefit-card p { color: var(--text-gray); }
+        
+        /* Insurance Comparison Table */
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .comparison-table th, .comparison-table td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid var(--border);
+        }
+        .comparison-table th {
+            background: var(--primary);
+            color: white;
+            font-weight: 600;
+        }
+        .comparison-table tr:nth-child(even) {
+            background: var(--bg-gray);
+        }
+        .tick { color: var(--accent-green); font-weight: bold; }
+        .cross { color: #ef4444; font-weight: bold; }
+        
+        /* FAQ Section */
+        .faq-item { 
+            margin-bottom: 20px; 
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 20px;
+        }
+        .faq-question { 
+            font-weight: 600; 
+            color: var(--primary); 
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-answer { 
+            color: var(--text-gray); 
+            line-height: 1.7;
+        }
+        
+        /* Contact Section */
+        .contact-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .contact-method {
+            background: var(--bg-gray);
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .contact-method i {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        .contact-method h3 {
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        .wechat-qr {
+            width: 150px;
+            height: 150px;
+            margin: 15px auto;
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+        .wechat-qr img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        
+        /* Agent Profile */
+        .agent-profile {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            background: var(--bg-gray);
+            padding: 30px;
+            border-radius: 12px;
+            margin-top: 20px;
+        }
+        .agent-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .agent-info h3 {
+            color: var(--primary);
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+        }
+        .license-badge {
+            display: inline-block;
+            background: var(--accent-green);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+        
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: var(--text-gray);
+            border-top: 1px solid var(--border);
+            margin-top: 40px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero { padding: 40px 20px; }
+            .hero h1 { font-size: 2rem; }
+            .hero-buttons { flex-direction: column; }
+            .btn { width: 100%; justify-content: center; }
+            .section { padding: 25px; }
+            .agent-profile { flex-direction: column; text-align: center; }
+            .contact-methods { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KK657RS2" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>泰国车险中文顾问服务</h1>
+            <p>专为在泰华人提供的泰国汽车保险中文顾问服务。通过ศรีกรุงโบรคเกอร์经纪人购买，享受特惠价格，24小时中文咨询。</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fab fa-weixin"></i> 免费微信咨询
+                </a>
+                <a href="#calculate" class="btn btn-secondary">
+                    <i class="fas fa-calculator"></i> 立即计算保费
+                </a>
+            </div>
+        </section>
+        
+        <!-- Why Choose Us -->
+        <section class="section">
+            <h2 class="section-title"><i class="fas fa-star"></i> 为什么选择我们？</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <h3>经纪人特惠价格</h3>
+                    <p>通过ศรีกรุงโบรคเกอร์经纪人购买，享受内部特惠价格，比门市购买更便宜。</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>AI辅助中文沟通</h3>
+                    <p>使用AI翻译工具确保沟通准确，文字消息咨询，避免语言误解。</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>泰英双语专业服务</h3>
+                    <p>精通泰语和英语，熟悉泰国保险系统，为您提供最准确的保险建议和手续代办。</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>快速出单</h3>
+                    <p>付款成功后立即出单，电子保单直接发送到您的邮箱，方便快捷。</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Agent Profile -->
+        <section class="section">
+            <h2 class="section-title"><i class="fas fa-user-tie"></i> 关于您的保险顾问</h2>
+            <div class="agent-profile">
+                <div>
+                    <!-- Placeholder for agent photo -->
+                    <div class="agent-photo" style="background: #1e4a8c; color: white; display: flex; align-items: center; justify-content: center; font-size: 2rem;">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+                <div class="agent-info">
+                    <h3>นิภาวดี ตั้งเส้ง (Nipawadee Tangseng)</h3>
+                    <p>ศรีกรุงโบรคเกอร์专业保险经纪人，精通泰语和英语，熟悉泰国保险系统。使用AI翻译工具辅助中文沟通，确保信息准确，为您提供最合适的保险方案。</p>
+                    <div class="license-badge">
+                        经纪人执照号码: 6604014447
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Insurance Comparison -->
+        <section class="section">
+            <h2 class="section-title"><i class="fas fa-shield-alt"></i> 泰国汽车保险等级对比</h2>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>保障项目</th>
+                        <th>一级保障</th>
+                        <th>二级加强保障</th>
+                        <th>三级基础保障</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>肇事逃逸/被撞</td>
+                        <td class="tick">✓ 全额保障</td>
+                        <td class="tick">✓ 全额保障</td>
+                        <td class="tick">✓ 全额保障</td>
+                    </tr>
+                    <tr>
+                        <td>车对车碰撞</td>
+                        <td class="tick">✓ 保障</td>
+                        <td class="tick">✓ 保障</td>
+                        <td class="cross">✗ 不保障</td>
+                    </tr>
+                    <tr>
+                        <td>车对物/人碰撞</td>
+                        <td class="tick">✓ 保障</td>
+                        <td class="tick">✓ 保障</td>
+                        <td class="cross">✗ 不保障</td>
+                    </tr>
+                    <tr>
+                        <td>火灾/水灾</td>
+                        <td class="tick">✓ 保障</td>
+                        <td class="tick">✓ 保障</td>
+                        <td class="cross">✗ 不保障</td>
+                    </tr>
+                    <tr>
+                        <td>车辆被盗/全损</td>
+                        <td class="tick">✓ 保障</td>
+                        <td class="cross">✗ 不保障</td>
+                        <td class="cross">✗ 不保障</td>
+                    </tr>
+                    <tr>
+                        <td>玻璃/配件损坏</td>
+                        <td class="tick">✓ 保障</td>
+                        <td class="tick">✓ 可选附加</td>
+                        <td class="tick">✓ 可选附加</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="margin-top: 20px; color: var(--text-gray); font-size: 0.9rem;">
+                <i class="fas fa-info-circle"></i> 所有等级均包含: 强制保险(พรบ.)、个人意外险、医疗费用、保释金
+            </p>
+        </section>
+        
+        <!-- How It Works -->
+        <section class="section" id="calculate">
+            <h2 class="section-title"><i class="fas fa-cogs"></i> 服务流程</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <h3>1. 咨询报价</h3>
+                    <p>通过微信联系我们，提供车辆信息（车牌号、品牌型号、注册年份），我们为您计算最优惠的保费。</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>2. 方案确认</h3>
+                    <p>我们为您推荐最适合的保险方案，详细说明保障范围和价格，您确认后即可购买。</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>3. 付款出单</h3>
+                    <p>通过银行转账或信用卡付款，付款成功后立即出单，电子保单发送到您的邮箱。</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>4. 售后服务</h3>
+                    <p>保险期间如有任何问题或需要理赔，我们提供全程中文协助，确保您获得应有的保障。</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- FAQ -->
+        <section class="section">
+            <h2 class="section-title"><i class="fas fa-question-circle"></i> 常见问题解答</h2>
+            <div class="faq-item">
+                <div class="faq-question">
+                    通过经纪人购买保险靠谱吗？和直接找保险公司有什么区别？
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    通过经纪人购买更加可靠！经纪人可以为您比较多家保险公司的方案，提供最优惠的价格和最合适的保障。我们作为ศรีกรุงโบรคเกอร์的经纪人，拥有内部特惠价格，比您直接找保险公司更便宜。我们使用AI翻译工具辅助中文沟通，确保信息准确无误。
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    发生事故理赔复杂吗？如果是我单方事故能理赔吗？
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    理赔流程很简单！发生事故后立即通过微信或LINE联系我们，我们将指导您收集必要文件并协助您联系保险公司。使用文字消息沟通，配合翻译工具确保信息准确。一级保障可以理赔单方事故（如撞到树、墙壁等），二级和三级保障需要有明确的责任方才能理赔。
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    我只有护照，没有泰国驾照，可以买保险吗？
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    可以购买！泰国汽车保险主要根据车辆信息，而不是驾驶者信息。只要车辆在泰国合法注册，无论驾驶者持有什么证件都可以购买保险。但请注意，驾驶时必须持有合法有效的驾驶执照。
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    买后悔了可以退保吗？退款政策是怎样的？
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    可以退保！根据泰国保险法规，购买后有14天的冷静期（Free Look Period），在此期间可以无条件退保并获得全额退款（扣除少量手续费）。超过14天后也可以退保，但会根据已保障的时间按比例退款。
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    保费可以分期付款吗？支持哪些支付方式？
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    支持分期付款！可以通过合作银行的信用卡分期付款，通常为0%利息，最长可分10期。支付方式包括：银行转账、信用卡支付、QR Code支付等，非常方便。
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section class="section" id="contact">
+            <h2 class="section-title"><i class="fas fa-comments"></i> 联系我们</h2>
+            <div class="contact-methods">
+                <div class="contact-method">
+                    <i class="fab fa-weixin"></i>
+                    <h3>微信咨询</h3>
+                    <p>扫描二维码添加微信，享受一对一中文咨询服务</p>
+                    <div class="wechat-qr">
+                        <!-- Placeholder for WeChat QR Code -->
+                        <div style="width: 100%; height: 100%; background: #f0f2f5; display: flex; align-items: center; justify-content: center; color: var(--text-gray);">
+                            <div style="text-align: center;">
+                                <i class="fab fa-weixin" style="font-size: 3rem; margin-bottom: 10px;"></i>
+                                <div>WeChat QR Code</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="font-size: 0.9rem; color: var(--text-gray); margin-top: 10px;">
+                        添加时请备注"泰国车险咨询"
+                    </p>
+                </div>
+                <div class="contact-method">
+                    <i class="fab fa-line"></i>
+                    <h3>LINE咨询</h3>
+                    <p>添加LINE官方账号，享受24小时自动回复服务</p>
+                    <div style="margin: 20px 0;">
+                        <div style="background: white; padding: 15px; border-radius: 8px; border: 1px solid var(--border);">
+                            <strong>LINE ID:</strong> @vax7479a
+                        </div>
+                    </div>
+                    <a href="https://line.me/R/ti/p/@vax7479a" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">
+                        <i class="fab fa-line"></i> 添加LINE好友
+                    </a>
+                </div>
+                <div class="contact-method">
+                    <i class="fas fa-comments"></i>
+                    <h3>文字咨询</h3>
+                    <p>通过文字消息咨询，避免语言沟通障碍</p>
+                    <div style="margin: 20px 0;">
+                        <div style="background: white; padding: 15px; border-radius: 8px; border: 1px solid var(--border);">
+                            <strong>推荐方式:</strong> 微信文字消息
+                        </div>
+                    </div>
+                    <p style="font-size: 0.9rem; color: var(--text-gray);">
+                        使用文字沟通，我们可以使用翻译工具确保信息准确
+                    </p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Call to Action -->
+        <section class="section" style="background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); color: white; text-align: center;">
+            <h2 style="font-size: 2rem; margin-bottom: 20px;">立即获取您的专属报价！</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 30px; opacity: 0.9;">
+                无需懂泰语，无需研究复杂条款，我们为您提供一站式中文服务
+            </p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary" style="background: var(--accent-green);">
+                    <i class="fab fa-weixin"></i> 微信免费咨询
+                </a>
+                <a href="https://line.me/R/ti/p/@vax7479a" class="btn btn-secondary" target="_blank">
+                    <i class="fab fa-line"></i> LINE文字咨询
+                </a>
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2026 ศรีกรุงโบรคเกอร์经纪人服务 | 泰国汽车保险中文顾问</p>
+            <p style="margin-top: 10px; font-size: 0.9rem;">
+                经纪人执照号码: 6604014447 | 服务地区: 全泰国
+            </p>
+            <p style="margin-top: 10px; font-size: 0.8rem; color: var(--text-gray);">
+                本网站为经纪人个人服务页面，非ศรีกรุงโบรคเกอร์官方网站
+            </p>
+        </footer>
+    </div>
+    
+    <script>
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('i');
+                
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                    icon.classList.remove('fa-chevron-up');
+                    icon.classList.add('fa-chevron-down');
+                } else {
+                    answer.style.display = 'block';
+                    icon.classList.remove('fa-chevron-down');
+                    icon.classList.add('fa-chevron-up');
+                }
+            });
+        });
+        
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Google Ads Conversion Tracking
+        document.querySelectorAll('.btn-primary').forEach(button => {
+            button.addEventListener('click', function() {
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'conversion', {
+                        'send_to': 'AW-1000176005/your-conversion-id',
+                        'value': 1.0,
+                        'currency': 'THB'
+                    });
+                }
+            });
+        });
+        
+        console.log('泰国车险中文顾问服务页面加载完成！');
+    </script>
+</body>
+</html>
